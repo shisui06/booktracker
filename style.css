@@ -8,11 +8,34 @@ body {
 form {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
   margin-bottom: 2rem;
 }
 
-#book-list > .book {
+form input {
+  flex: 1 1 150px;
+  padding: 0.5rem;
+}
+
+form button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+form button:hover {
+  background-color: #f0f0f0;
+}
+
+.book-list > .book {
   border: 1px solid #ccc;
   padding: 1rem;
   margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.book button {
+  margin-right: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
 }
