@@ -1,0 +1,1 @@
+Application web pour suivre les livres lus, prendre des notes et rester motivé dans la lecture. Base de données MongoDB Atlas avec Node.js, intégration de l’API Google Books pour afficher les couvertures de livres.
