@@ -1,23 +1,12 @@
-// Select DOM elements
-const bookForm = document.getElementById("book-form");
-const bookList = document.getElementById("book-list");
+bookForm.addEventListener("submit", function(e) {
+  e.preventDefault();
+  
+  const title = document.getElementById("title").value;
+  const author = document.getElementById("author").value;
+  const notes = document.getElementById("notes").value;
 
-// In-memory storage
-let books = [];
-
-// Render a single book
-function renderBook(book) {
-  const bookEl = document.createElement("div");
-  bookEl.innerHTML = `
-    <strong>${book.title}</strong> by ${book.author} <br/>
-    Notes: ${book.notes || "None"} <br/>
-    Status: ${book.read ? "Read" : "Not read"} <br/>
-  `;
-  bookList.appendChild(bookEl);
-}
-
-// Render all books
-function renderBooks() {
-  bookList.innerHTML = "";
-  books.forEach(renderBook);
-}
+  // Create a new div element for the book
+  const bookDiv = document.createElement("div");
+  
+ 
+});

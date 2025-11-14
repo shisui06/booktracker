@@ -4,15 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Book Tracker</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <h1>📚 Book Tracker</h1>
 
   <form id="book-form">
+    <label for="title">Title:</label>
     <input type="text" id="title" placeholder="Book title" required />
+    
+    <label for="author">Author:</label>
     <input type="text" id="author" placeholder="Author" required />
+    
+    <label for="notes">Notes:</label>
     <input type="text" id="notes" placeholder="Notes" />
-    <button type="submit">Add Book</button>
+    
+    <button type="submit" id="submit">Add Book</button>
   </form>
 
   <div id="book-list"></div>
